@@ -1,7 +1,9 @@
 import { Button, Card, TextField } from "@mui/material";
 import { useState } from "react";
 
-export function SignupCard() {
+export function SignupCard(props: {
+  onSignup: (username: string, password: string) => void;
+}) {
   const [email, setEmail] = useState("");
   const [pswd, setPswd] = useState("");
 
@@ -22,7 +24,12 @@ export function SignupCard() {
       <TextField
         label="password"
         onChange={(e) => setPswd(e.target.value)}></TextField>
-      <Button>Sign Up</Button>
+      <Button
+        onClick={async () => {
+          props.onSignup(email, pswd);
+        }}>
+        Sign Up
+      </Button>
     </Card>
   );
 }

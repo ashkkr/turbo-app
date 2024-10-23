@@ -1,1 +1,1 @@
-{ "bracketSameLine": true, "singleAttributePerLine": false }
+{ "bracketSameLine": true, "singleAttributePerLine": false, "semi": true }
