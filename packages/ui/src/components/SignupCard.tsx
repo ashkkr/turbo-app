@@ -1,20 +1,20 @@
-import { Button, Card, TextField } from '@mui/material';
-import { useState } from 'react';
+import { Button, Card, TextField } from "@mui/material";
+import { useState } from "react";
 
 export function SignupCard() {
-  const [email, setEmail] = useState('');
-  const [pswd, setPswd] = useState('');
+  const [email, setEmail] = useState("");
+  const [pswd, setPswd] = useState("");
 
   return (
     <Card
       sx={{
-        display: 'flex',
-        flexDirection: 'column',
-        width: '30vw',
-        margin: 'auto',
-        marginTop: '20vh',
-        gap: '20px',
-        padding: '40px',
+        display: "flex",
+        flexDirection: "column",
+        width: "30vw",
+        margin: "auto",
+        marginTop: "20vh",
+        gap: "20px",
+        padding: "40px",
       }}>
       <TextField
         label="email"

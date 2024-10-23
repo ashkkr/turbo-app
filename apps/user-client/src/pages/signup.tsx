@@ -1,5 +1,5 @@
-import {SignupCard} from '@repo/ui/components'
+import { SignupCard } from "@repo/ui/components";
 
-export default function SignupPage(){
-    return <SignupCard/>
+export default function SignupPage() {
+  return <SignupCard />;
 }
