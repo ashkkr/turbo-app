@@ -26,7 +26,7 @@ export function SignupCard(props: {
         onChange={(e) => setPswd(e.target.value)}></TextField>
       <Button
         onClick={async () => {
-          props.onSignup(email, pswd);
+          await props.onSignup(email, pswd);
         }}>
         Sign Up
       </Button>
